@@ -120,7 +120,7 @@ const Home = ({ OnlineList }) => {
                         {
 
                             signinmessages.map(msg => (
-                                msg.username && msg.room === username && room ?
+                                msg.username === username?
                                     <p className="entered-chatroom" ref={enteredChatRef}>You have entered the {msg.room} chat room!</p>
 
                                     :

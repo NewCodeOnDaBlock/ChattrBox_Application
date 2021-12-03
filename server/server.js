@@ -17,8 +17,13 @@ io.on('connection', socket => { // listening
         console.log(`User ${socket.id} joined the ${roomNameInput} chat!`)
     })
 
+    // socket.on('sendSignInMsg', signInData => { 
+    //     io.emit('receiveJoinRoomMsg', signInData)
+    //     console.log(`${signInData.username} has signed on to the ${signInData.room} Chat`)
+    // })
+
     socket.on('sendSignInMsg', signInData => { 
-        io.emit('receiveJoinRoomMsg', signInData)
+        io.to(signInData.room).emit('receiveJoinRoomMsg', signInData)
         console.log(`${signInData.username} has signed on to the ${signInData.room} Chat`)
     })
 
