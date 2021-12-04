@@ -2,8 +2,6 @@ import { React, useState, useEffect, useRef } from "react";
 import { useParams, useHistory } from "react-router-dom";
 
 import './home.css';
-// import ScrollToBottom from 'react-scroll-to-bottom';
-// import Home from "./Home";
 import leftLogo from '../images/chevron_left.png'
 import rightLogo from '../images/chevron_right.png'
 

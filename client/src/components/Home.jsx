@@ -1,6 +1,5 @@
 import { React, useState, useEffect, useRef } from "react";
 import { useParams, useHistory } from "react-router-dom";
-// import axios from "axios";
 import io from 'socket.io-client';
 import './home.css';
 import ScrollToBottom from 'react-scroll-to-bottom';
