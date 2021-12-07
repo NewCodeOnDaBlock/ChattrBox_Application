@@ -1,7 +1,7 @@
 
 # ChattrBox_App
 
-Rhe ChattrBox MVP, a cool front end focused live chat web application.
+The ChattrBox MVP, a cool front end focused live chat web application.
 
 -
 
